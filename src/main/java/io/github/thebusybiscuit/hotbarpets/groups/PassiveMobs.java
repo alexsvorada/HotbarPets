@@ -28,13 +28,13 @@ public final class PassiveMobs implements PetGroup {
         new IronGolemPet(plugin.getItemGroup(), new SlimefunItemStack("HOTBAR_PET_IRON_GOLEM", PetTexture.IRON_GOLEM_PET.getHash(), "&7Iron Golem Pet", getName(), "&7Favourite Food: Iron Ingots", "", "&fRight-Click: &7Gives you Resistance"), new ItemStack(Material.IRON_INGOT), new ItemStack[]{
                 new ItemStack(Material.IRON_BLOCK), new ItemStack(Material.PUMPKIN), new ItemStack(Material.IRON_BLOCK),
                 new ItemStack(Material.IRON_INGOT), new ItemStack(Material.EMERALD), new ItemStack(Material.IRON_INGOT),
-                new ItemStack(Material.IRON_INGOT), SlimefunItems.GOLD_16K, new ItemStack(Material.IRON_INGOT)
+                new ItemStack(Material.IRON_INGOT), SlimefunItems.GOLD_16K.item(), new ItemStack(Material.IRON_INGOT)
         }).register(plugin);
 
         new HotbarPet(plugin.getItemGroup(), new SlimefunItemStack("HOTBAR_PET_SLIME", PetTexture.SLIME_PET.getHash(), "&aSlime Pet", getName(), "&7Favourite Food: Glowstone Dust", "", "&fImmune to Fall Damage"), new ItemStack(Material.GLOWSTONE_DUST), new ItemStack[]{
                 new ItemStack(Material.SLIME_BALL), new ItemStack(Material.DIAMOND), new ItemStack(Material.SLIME_BALL),
                 new ItemStack(Material.SLIME_BALL), new ItemStack(Material.EMERALD), new ItemStack(Material.SLIME_BALL),
-                SlimefunItems.GOLD_20K, SlimefunItems.GOLD_20K, SlimefunItems.GOLD_20K
+                SlimefunItems.GOLD_20K.item(), SlimefunItems.GOLD_20K.item(), SlimefunItems.GOLD_20K.item()
         }).register(plugin);
         // @formatter:on
     }

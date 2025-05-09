@@ -48,7 +48,7 @@ public class TNTListener implements Listener {
 
     @EventHandler(priority = EventPriority.LOW, ignoreCancelled = true)
     public void onTNTExplode(EntityExplodeEvent e) {
-        if (e.getEntityType() == EntityType.PRIMED_TNT && e.getEntity().hasMetadata(METADATA_KEY)) {
+        if (e.getEntityType() == EntityType.TNT && e.getEntity().hasMetadata(METADATA_KEY)) {
             OfflinePlayer player = Bukkit.getOfflinePlayer((UUID) e.getEntity().getMetadata(METADATA_KEY).get(0).value());
 
             plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, () -> e.getEntity().removeMetadata(METADATA_KEY, plugin), 4);

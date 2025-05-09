@@ -30,13 +30,13 @@ public final class PeacefulAnimals implements PetGroup {
         new HotbarPet(plugin.getItemGroup(), new SlimefunItemStack("HOTBAR_PET_FISH", PetTexture.FISH_PET.getHash(), "&3Fish Pet", getName(), "&7Favourite Food: Seeds", "", "&fGives you Fish over time..."), new ItemStack(Material.WHEAT_SEEDS), new ItemStack[] {
                 new ItemStack(Material.IRON_INGOT), new ItemStack(Material.COD), new ItemStack(Material.IRON_INGOT),
                 new ItemStack(Material.COD), new ItemStack(Material.DIAMOND), new ItemStack(Material.COD),
-                new ItemStack(Material.WATER_BUCKET), SlimefunItems.GOLD_18K, new ItemStack(Material.WATER_BUCKET)
+                new ItemStack(Material.WATER_BUCKET), SlimefunItems.GOLD_18K.item(), new ItemStack(Material.WATER_BUCKET)
         }).register(plugin);
 
         new SquidPet(plugin.getItemGroup(), new SlimefunItemStack("HOTBAR_PET_SQUID", PetTexture.SQUID_PET.getHash(), "&bSquid Pet", getName(), "&7Favourite Food: Raw Cod", "", "&fRight-Click: &7Gives you Water Breathing"), new ItemStack(Material.COD), new ItemStack[] {
                 new ItemStack(Material.COAL), new ItemStack(Material.COD), new ItemStack(Material.COAL),
                 new ItemStack(Material.WATER_BUCKET), new ItemStack(Material.DIAMOND), new ItemStack(Material.WATER_BUCKET),
-                new ItemStack(Material.COD), SlimefunItems.GOLD_16K, new ItemStack(Material.COD)
+                new ItemStack(Material.COD), SlimefunItems.GOLD_16K.item(), new ItemStack(Material.COD)
         }).register(plugin);
 
         new RabbitPet(plugin.getItemGroup(), new SlimefunItemStack("HOTBAR_PET_RABBIT", PetTexture.RABBIT_PET.getHash(), "&eRabbit Pet", getName(), "&7Favourite Food: Carrots", "", "&fRight-Click: &7Gives you 30 seconds of Luck"), new ItemStack(Material.CARROT), new ItemStack[] {

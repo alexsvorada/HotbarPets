@@ -40,7 +40,7 @@ public class HotbarPets extends JavaPlugin implements Listener, SlimefunAddon {
             new GitHubBuildsUpdater(this, getFile(), "TheBusyBiscuit/HotbarPets/master").start();
         }
 
-        itemGroup = new ItemGroup(new NamespacedKey(this, "pets"), new CustomItemStack(PetTexture.CATEGORY.getAsItem(), "&dHotbar Pets", "", "&a> Click to open"));
+        itemGroup = new ItemGroup(new NamespacedKey(this, "pets"), CustomItemStack.create(PetTexture.CATEGORY.getAsItem(), "&dHotbar Pets", "", "&a> Click to open"));
 
         // Add all the Pets via their Group class
         new FarmAnimals(this);

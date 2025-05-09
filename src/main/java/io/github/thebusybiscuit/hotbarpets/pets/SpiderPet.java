@@ -18,7 +18,7 @@ public class SpiderPet extends SimpleBasePet {
 
     @Override
     public void onUseItem(Player p) {
-        p.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 1200, 3));
+        p.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, 1200, 3));
         p.getWorld().playSound(p.getLocation(), Sound.ENTITY_SPIDER_AMBIENT, 1.0F, 2.0F);
     }
 

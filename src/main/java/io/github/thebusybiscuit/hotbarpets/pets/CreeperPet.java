@@ -9,7 +9,6 @@ import org.bukkit.metadata.FixedMetadataValue;
 
 import io.github.thebusybiscuit.hotbarpets.HotbarPets;
 import io.github.thebusybiscuit.hotbarpets.SimpleBasePet;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 
 public class CreeperPet extends SimpleBasePet {
@@ -24,7 +23,7 @@ public class CreeperPet extends SimpleBasePet {
 
     @Override
     public void onUseItem(Player p) {
-        TNTPrimed tnt = (TNTPrimed) p.getWorld().spawnEntity(p.getLocation(), EntityType.PRIMED_TNT);
+        TNTPrimed tnt = (TNTPrimed) p.getWorld().spawnEntity(p.getLocation(), EntityType.TNT);
         tnt.setMetadata("hotbarpets_player", new FixedMetadataValue(plugin, p.getUniqueId()));
         tnt.setFuseTicks(0);
 

@@ -19,8 +19,8 @@ public class PatriotPet extends SimpleBasePet {
     @Override
     public void onUseItem(Player p) {
         p.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 200, 0));
-        p.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 200, 0));
-        p.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 200, 0));
+        p.addPotionEffect(new PotionEffect(PotionEffectType.RESISTANCE, 200, 0));
+        p.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 200, 0));
         p.addPotionEffect(new PotionEffect(PotionEffectType.SATURATION, 100, 0));
         p.getWorld().playSound(p.getLocation(), Sound.ENTITY_ZOMBIE_CONVERTED_TO_DROWNED, 1.0F, 2.0F);
     }

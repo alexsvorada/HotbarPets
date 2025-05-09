@@ -19,7 +19,7 @@ public class EnderDragonPet extends SimpleBasePet {
 
     @Override
     public void onUseItem(Player p) {
-        p.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 500, 0));
+        p.addPotionEffect(new PotionEffect(PotionEffectType.RESISTANCE, 500, 0));
         p.getWorld().playSound(p.getLocation(), Sound.ENTITY_ENDER_DRAGON_AMBIENT, 1.0F, 2.0F);
         p.launchProjectile(DragonFireball.class);
     }
